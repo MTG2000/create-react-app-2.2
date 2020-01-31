@@ -1,18 +1,20 @@
 import React from "react";
-import "./App.scss";
-// import ScrollToTop from "./utils/ScrollToTopController";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./utils/aos";
+import Header from "./components/layouts/Header";
+import Footer from "./components/layouts/Footer";
+import { Container, Box, Typography } from "@material-ui/core";
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <h1 className="text-white bg-primary text-center display-2 mt-6">
-          Ready To Use React App !!
-          <FontAwesomeIcon icon="smile" />
-        </h1>
-      </div>
+      <Header />
+      <Container>
+        <Box mt={15}>
+          <Typography color="primary" variant="h2" component="h6">
+            Hello There , ready to use React-MaterialUI template
+          </Typography>
+        </Box>
+      </Container>
+      <Footer />
     </div>
   );
 }
